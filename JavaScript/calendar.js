@@ -8,27 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadPage() {
     eventManager.eventsData = [];
-    const updateTitle = document.getElementById('updateTitle')
+    const updateTitle = document.getElementById('updateTitle');
     if (updateTitle) {
         updateTitle.value = '';
     }
-    const updateDate = document.getElementById('updateDate')
+    const updateDate = document.getElementById('updateDate');
     if (updateDate) {
         updateDate.value = '';
     }
-    const addTitle = document.getElementById('addTitle')
+    const addTitle = document.getElementById('addTitle');
     if (addTitle) {
         addTitle.value = '';
     }
-    const addDate = document.getElementById('addDate')
+    const addDate = document.getElementById('addDate');
     if (addDate) {
         addDate.value = '';
     }
-    const deleteEvent = document.getElementById('deleteEvent')
+    const deleteEvent = document.getElementById('deleteEvent');
     if (deleteEvent) {
         deleteEvent.value = '';
     }
-    const updateEvent = document.getElementById('updateEvent')
+    const updateEvent = document.getElementById('updateEvent');
     if (updateEvent) {
         updateEvent.value = '';
     }
