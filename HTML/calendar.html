@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../JavaScript/calendar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+</head>
+
+<body dir="rtl">
+    <div id='calendar'></div>
+    <div>
+        <div>
+            <label>כותרת:</label>
+            <input type="text" placeholder="כותרת האירוע" id="addTitle" name="addTitle">
+            <label>תאריך:</label>
+            <input type="date" placeholder="תאריך האירוע" id="addDate" name="addDate">
+            <button onClick="addEvent()">הוסף אירוע</button>
+        </div>
+        <div>
+            <select name="deleteEvent" id="deleteEvent">
+                <option>בחר אירוע</option>
+            </select>
+            <button onClick="deleteEvent()">מחיקת אירוע</button>
+        </div>
+        <select name="updateEvent" id="updateEvent" onChange="updateEventData()">
+            <option>בחר אירוע</option>
+        </select>
+        <label>כותרת:</label>
+        <input type="text" placeholder="כותרת האירוע" id="updateTitle" name="updateTitle">
+        <label>תאריך:</label>
+        <input type="date" placeholder="תאריך האירוע" id="updateDate" name="updateDate">
+        <button onClick="updateEvent()">עדכון אירוע</button>
+    </div>
+</body>
+
+</html>
